@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmony Garden | Order</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Harmony Garden</h1>
+      <nav class="navbar" aria-label="Primary"><ul><li><a href="home.html">Home</a></li><li><a href="about.html">About</a></li><li class="dropdown"><span class="dropdown-toggle">Menu</span><div class="dropdown-content"><a href="calendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="menulist.html">Menu List</a></div></li><li><a href="order.html">Order</a></li><li><a href="location.html">Location</a></li><li><a href="contact.html">Contact</a></li><li><a href="sitemap-credits.html">Site Map &amp; Credits</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="section-card">
+      <h2>Place Your Order</h2>
+      <p>Choose quantities from our sample Asian cuisine menu. Tax rate: 13%.</p>
+      <table class="order-table" id="order-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-item="Chicken Teriyaki" data-price="13.5"><td>Chicken Teriyaki</td><td>$13.50</td><td><input type="number" min="0" value="0" /></td></tr>
+          <tr data-item="Pad Thai" data-price="12.25"><td>Pad Thai</td><td>$12.25</td><td><input type="number" min="0" value="0" /></td></tr>
+          <tr data-item="Beef Bulgogi" data-price="14.75"><td>Beef Bulgogi</td><td>$14.75</td><td><input type="number" min="0" value="0" /></td></tr>
+          <tr data-item="Miso Ramen" data-price="11.99"><td>Miso Ramen</td><td>$11.99</td><td><input type="number" min="0" value="0" /></td></tr>
+          <tr data-item="Vegetable Dumplings" data-price="8.5"><td>Vegetable Dumplings</td><td>$8.50</td><td><input type="number" min="0" value="0" /></td></tr>
+        </tbody>
+      </table>
+      <button type="button" class="button" id="calculate-btn">Calculate Total</button>
+
+      <div class="summary">
+        <h3>Items Ordered</h3>
+        <ul id="ordered-items">
+          <li>No items selected yet.</li>
+        </ul>
+        <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+        <p><strong>Tax (13%):</strong> $<span id="tax">0.00</span></p>
+        <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner">&copy; 2026 Harmony Garden Restaurant</div></footer>
+  <script src="order.js"></script>
+</body>
+</html>
